@@ -1,2 +1,37 @@
-# customer_churn_prediction_api
-Built and deployed a Customer Churn Prediction API using FastAPI and Scikit-learn. Trained a machine learning classification model to predict customer churn based on customer usage and billing features. Implemented REST API endpoints for real-time predictions and integrated model serialization using Joblib.
+# Customer Churn Prediction API
+
+## Objective
+Predict customer churn using Machine Learning.
+
+## Tech Stack
+- FastAPI
+- Scikit-learn
+- Pandas
+- Joblib
+
+## Features Used
+- tenure
+- MonthlyCharges
+- TotalCharges
+
+## Run API
+
+```bash
+uvicorn app:app --reload
+```
+
+## Swagger UI
+
+```text
+http://127.0.0.1:8000/docs
+```
+
+## Sample Input
+
+```json
+{
+  "tenure": 12,
+  "MonthlyCharges": 75.5,
+  "TotalCharges": 900.0
+}
+```
